@@ -16,3 +16,4 @@ Navigate to project directory and run the script
 ```bash
 python 01_calculator/calculator.py
 python 02_rock_paper_scissors/main.py
+python 03_tic_tac_toe/main.py
