@@ -15,6 +15,4 @@ Navigate to project directory and run the script
 
 ```bash
 python 01_calculator/calculator.py
-
-```bash
 python 02_rock_paper_scissors/main.py
