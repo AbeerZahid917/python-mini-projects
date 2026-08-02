@@ -6,7 +6,7 @@ A collection of 5 beginner-to-intermediate CLI python applications focused on pr
 - [x] 01. Simple Calculator: Object-oriented calculator handling variable-length arithmetic inputs and CLI command parsing.
 - [x] 02. Rock paper scissors: Game state tracking, random selection, and score mechanics.
 - [x] 03. Tic tac toe: 2D array representation, turn logic, and win-condition checkers.
-- [ ] 04. Speed typing test: String matching, timing calculations, and WPM metric formulas.
+- [x] 04. Speed typing test: String matching, timing calculations, and WPM metric formulas.
 - [ ] 05. Contact book: Data persistence, file I/O (JSON/CSV), and CRUD operation structure.
 
 ## Running a project
@@ -17,3 +17,4 @@ Navigate to project directory and run the script
 python 01_calculator/calculator.py
 python 02_rock_paper_scissors/main.py
 python 03_tic_tac_toe/main.py
+python 04_speed_typing_test/main.py
