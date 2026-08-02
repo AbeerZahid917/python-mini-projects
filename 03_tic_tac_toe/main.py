@@ -55,6 +55,9 @@ class Board:
 
 
 class GameEngine:
+    """ 
+        The class that holds all the rules for the game for winning
+    """
     def __init__(self):
         self.board = Board()
         self.scores = {"X": 0, "O": 0, "Ties": 0}
@@ -98,11 +101,15 @@ class GameEngine:
 
 
 class CLIHandler:
+    """
+        Handles input and output
+    """
     def __init__(self):
         self.game = GameEngine()
 
 
     def getPlayerInput(self):
+        """ Get input from the player and move accordingly """
         while True:
             raw_input = input(f"Player {self.game.curr_player}, please enter the row(0-2) and col(0-2) for your marker(1 2) or q to quit: ").strip().lower()
 
@@ -126,14 +133,14 @@ class CLIHandler:
 
 
     def runGame(self):
-        print("==WELCOME TO TIC TAC TOE==")
+        print("===WELCOME TO TIC TAC TOE===")
 
         while True:
             self.game.board.displayBoard()
             input = self.getPlayerInput()
 
             if input == "quit":
-                print("GAME ENDED!")
+                print("===GAME ENDED!===")
                 break 
 
             row, col = input 
@@ -148,7 +155,8 @@ class CLIHandler:
 
             if self.game.board.isFull():
                 self.game.board.displayBoard()
-                print("It is a tie!")
+                print("===GAME ENDED!===")
+                print("It's a tie!")
                 self.game.scores["Ties"] += 1
                 break 
 
